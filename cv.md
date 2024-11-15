@@ -2,7 +2,7 @@
 
 ## Viktoriia Rosovska
 
-<image scr="./photo.jpg" alt="my photo" style="width: 50px; heigth: 50px; border-radius: 50%"/>
+<image src="./photo.jpg" alt="my photo" style="width: 50px; heigth: 50px; border-radius: 50%"/>
 
 **Contact Information:**
 
@@ -37,6 +37,16 @@ I am a Junior Frontend Developer who interested in creating websites and WEB-app
     - Conflict-free
 
 **Code Examples**
+
+```javascript
+export const createUserAddress = (street, numberHouse, numberHoll, flat) => {
+  const addressArr = [];
+  addressArr.push(street.label, "будинок: " + numberHouse);
+  if (numberHoll) addressArr.push("під'їзд: " + numberHoll);
+  if (flat) addressArr.push("квартира: " + flat);
+  return addressArr.join(", ");
+};
+```
 
 **Work Experience:**
 
